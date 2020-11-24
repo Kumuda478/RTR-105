@@ -1,0 +1,48 @@
+#include <stdio.h>
+main(){
+   int k,l,m,n,o,p;
+
+   printf("Enter No 1: ");
+   scanf("%d", &k);
+   printf("Enter No 2: ");
+   scanf("%d", &l);
+   printf("Enter No 3: ");
+   scanf("%d", &m);
+
+    printf("if you want ascending order then enter 1 otherwise 0..  ");
+    int temp;
+    scanf("%d",&temp);
+    if (k>l) {
+            n=k;
+            p=l;
+        }
+    else {
+            n=l;
+            p=k;
+        }
+    if (n>m) {
+            o=n;
+            if(p>m){
+            n=p;
+            p=m;
+            }
+    else
+            {
+            n=m;
+            }
+        }
+   else {o=m;}
+    if(temp)
+    {
+        printf("order: %d , %d , %d \n", p,n,o);
+    }
+    else
+    {
+        printf("order: %d , %d , %d \n", m,n,p);
+    }
+
+
+
+
+   getch();
+}
